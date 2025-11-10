@@ -269,15 +269,26 @@
                         <div class="banner-one__content-right-text">
                             <p>Türkiye’nin Her Noktasına <br> Konforlu ve Güvenli Yolculuk.</p>
                         </div>
+                        <!-- Play Buton -->
+                        <a href="#" id="open-video" class="video-play-btn">
+                        <span class="hover-effect"></span>
+                        <span class="hover-effect2"></span>
+                        </a>
 
-                        <div class="banner-one__content-right-btn">
-                            <a class="thm-btn" href="about.html">Hakkımızda
-                                <i class="icon-right-arrow21"></i>
-                                <span class="hover-btn hover-bx"></span>
-                                <span class="hover-btn hover-bx2"></span>
-                                <span class="hover-btn hover-bx3"></span>
-                                <span class="hover-btn hover-bx4"></span>
-                            </a>
+                        <!-- Modal -->
+                        <div id="video-modal" class="video-modal">
+                        <div class="video-modal-content">
+                            <span id="close-video" class="close-video">&times;</span>
+                            <iframe
+                            id="youtube-video"
+                            src=""
+                            frameborder="0"
+                            allow="autoplay; encrypted-media"
+                            allowfullscreen
+                            ></iframe>
+                        </div>
+                        </div>
+
                         </div>
                     </div>
                 </div>
@@ -1214,7 +1225,33 @@
 
 <script src="assets/js/vendor.min.js"defer></script>
 <script src="assets/js/theme.min.js" defer></script>
+<script>
 
+const playBtn = document.getElementById("open-video");
+const modal = document.getElementById("video-modal");
+const closeBtn = document.getElementById("close-video");
+const iframe = document.getElementById("youtube-video");
+
+playBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    iframe.src = "https://www.youtube.com/embed/Get7rqXYrbQ?autoplay=1&controls=0&rel=0&modestbranding=1"; // Kontrolsüz video
+    modal.style.display = "flex";
+});
+
+closeBtn.addEventListener("click", function() {
+    iframe.src = ""; // Video durdur
+    modal.style.display = "none";
+});
+
+// Modal dışında tıklayınca da kapat
+modal.addEventListener("click", function(e){
+    if(e.target === modal){
+        iframe.src = "";
+        modal.style.display = "none";
+    }
+});
+
+</script>
 
 </body>
 
