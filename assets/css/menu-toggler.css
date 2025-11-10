@@ -13,7 +13,60 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
+.skill-one__feature-box {
+                background: #fff;
+                border-radius: 16px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+                padding: 25px 20px;
+                text-align: left;
+                transition: all 0.3s ease;
+            }
+            .skill-one__feature-box:hover {
+                background: #f0f6ff;
+                transform: translateY(-5px);
+            }
+            .skill-one__feature-box .icon {
+                font-size: 40px;
+                color: rgb(234,98,56);
+                margin-bottom: 15px;
+            }
+            .skill-one__feature-box h4 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+            .skill-one__feature-box p {
+                font-size: 15px;
+                color: #666;
+                margin: 0;
+            }
+.skill-one__feature-box {
+                background: #ffffff;
+                border-radius: 16px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+                padding: 25px 20px;
+                text-align: left;
+                transition: all 0.3s ease;
+            }
+            .skill-one__feature-box:hover {
+                background: #f5f9ff;
+                transform: translateY(-5px);
+            }
+            .skill-one__feature-box .icon {
+                font-size: 38px;
+                color: rgb(234,98,56);
+                margin-bottom: 12px;
+            }
+            .skill-one__feature-box h4 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+            .skill-one__feature-box p {
+                font-size: 15px;
+                color: #666;
+                margin: 0;
+            }
 /* WhatsApp butonu konum ve renk */
 .float-btn-whatsapp {
     bottom: 80px; /* Instagram’ın üstünde */
