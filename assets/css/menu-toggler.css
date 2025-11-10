@@ -53,3 +53,277 @@
     background: var(--logistiq-black);
     color: var(--logistiq-white);
 }
+
+.partners {
+  padding: 100px 0;
+  background: linear-gradient(to bottom, #ffffff, #f7f9fc);
+}
+
+.partners__title h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1b1b1b;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.partners__title h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #007bff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.partners__title h2:hover::after {
+  width: 120px;
+}
+
+.partners__title p {
+  color: #666;
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+}
+
+.partners__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.partner-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 40px 25px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.partner-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.partner-logo img {
+  max-width: 160px;
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  filter: grayscale(40%);
+}
+
+.partner-card:hover .partner-logo img {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.partner-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.partner-info p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .partners {
+    padding: 60px 0;
+  }
+  .partners__title h2 {
+    font-size: 30px;
+  }
+  .partner-logo img {
+    max-width: 140px;
+  }
+}
+.privacy-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.privacy-heading h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #002b5b;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.privacy-heading h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #f2b705;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.privacy-heading p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.7;
+}
+
+.privacy-block {
+  margin-top: 50px;
+}
+
+.privacy-block h3 {
+  color: #002b5b;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.privacy-block p {
+  color: #555;
+  line-height: 1.8;
+}
+
+.privacy-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.privacy-list li {
+  margin-bottom: 10px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.privacy-list i {
+  color: #2eb872;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.privacy-gallery .gallery-item {
+  margin-bottom: 30px;
+}
+
+
+.privacy-gallery img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .privacy-heading h2 {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0c2d57;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title__line {
+  width: 80px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.blog-details.section-space {
+  padding: 80px 0;
+}
+
+.blog-details__content.two-col-layout {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Sol taraf (görsel) */
+.blog-details__content-img1.col-left {
+  flex: 1 1 45%;
+}
+
+.blog-details__content-img1 .inner img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Sağ taraf (yazılar) */
+.blog-details__content-text1.col-right {
+  flex: 1 1 50%;
+}
+
+.blog-details__content-text1 h2 {
+  font-size: 28px;
+  color: #0c2d57;
+  margin-bottom: 15px;
+}
+
+.blog-details__content-text1 h3 {
+  font-size: 22px;
+  color: #0c2d57;
+  margin-top: 25px;
+}
+
+.blog-details__content-text1 p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.blog-details__list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.blog-details__list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+.blog-details__list i {
+  color: #007bff;
+  margin-right: 8px;
+}
+
+/* Mobil */
+@media (max-width: 992px) {
+  .blog-details__content.two-col-layout {
+    flex-direction: column;
+  }
+
+  .blog-details__content-img1.col-left,
+  .blog-details__content-text1.col-right {
+    flex: 1 1 100%;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+}
