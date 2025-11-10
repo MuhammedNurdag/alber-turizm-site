@@ -327,3 +327,8 @@
     font-size: 28px;
   }
 }
+
+
+.icon-clock2:before {
+    content: "\e922";
+}
