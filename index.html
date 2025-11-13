@@ -39,10 +39,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- ⚡ CRITICAL CSS - İlk ekran için inline -->
-    <link rel="preload" href="assets/css/kritik.css" as="style">
-  <link rel="stylesheet" href="assets/css/critical.css">
-
   <!-- Preload Ana CSS - Hemen sonra yüklensin -->
   <link rel="preload" href="assets/css/bundle.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
@@ -61,11 +57,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   </noscript>
 
-  <!-- Fallback for old browsers -->
-  <script>
-    // LoadCSS polyfill
-    !function(e){"use strict";var t=function(t,n,r){var o,i=e.document,a=i.createElement("link");if(n)o=n;else{var l=(i.body||i.getElementsByTagName("head")[0]).childNodes;o=l[l.length-1]}var d=i.styleSheets;a.rel="stylesheet",a.href=t,a.media="only x",function e(t){if(i.body)return t();setTimeout(function(){e(t)})}(function(){o.parentNode.insertBefore(a,n?o:o.nextSibling)});var s=function(e){for(var t=a.href,n=d.length;n--;)if(d[n].href===t)return e();setTimeout(function(){s(e)})};return a.addEventListener&&a.addEventListener("load",function(){this.media=r||"all"}),a.onloadcssdefined=s,s(function(){a.media!==r&&(a.media=r)}),a};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this);
-  </script>
 </head>
 
 
@@ -250,12 +241,12 @@
         <section class="banner-one">
             <div class="banner-one__pattern"
             style="background-image: url(assets/images/pattern/banner-v1-pattern.png);"></div>
-<div class="banner-one__pattern2">
-    <img src="assets/images/pattern/banner-v1-pattern2.png" 
-         alt="Alber Turizm" 
-         fetchpriority="high"
-         >
-</div>            <div class="container">
+            <div class="banner-one__pattern2">
+                <img src="assets/images/pattern/banner-v1-pattern2.png" 
+                    alt="Alber Turizm" 
+                    fetchpriority="high"
+                    >
+            </div>            <div class="container">
                 <div class="banner-one__location clearfix">
 
                     <!-- Start Banner One Location single -->
