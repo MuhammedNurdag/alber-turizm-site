@@ -613,24 +613,33 @@
     }
 
     if ($(".mobile-nav__container .main-menu__list").length) {
-        let dropdownAnchor = $(".mobile-nav__container .main-menu__list .dropdown > a");
-        dropdownAnchor.each(function () {
-            let self = $(this);
-            let toggleBtn = document.createElement("BUTTON");
-            toggleBtn.setAttribute("aria-label", "dropdown toggler");
-            toggleBtn.innerHTML = "<i class='fa fa-angle-down'></i>";
-            self.append(function () {
-                return toggleBtn;
-            });
-            self.find("button").on("click", function (e) {
-                e.preventDefault();
-                let self = $(this);
-                self.toggleClass("expanded");
-                self.parent().toggleClass("expanded");
-                self.parent().parent().children("ul").slideToggle();
-            });
+    let dropdownAnchor = $(".mobile-nav__container .main-menu__list .dropdown > a");
+
+    dropdownAnchor.each(function () {
+        let self = $(this);
+        let toggleBtn = document.createElement("BUTTON");
+        toggleBtn.setAttribute("aria-label", "dropdown toggler");
+        toggleBtn.textContent = "+"; // ikon yerine + kullanıyoruz
+        self.append(toggleBtn);
+
+        $(toggleBtn).on("click", function (e) {
+            e.preventDefault();
+            let btn = $(this);
+            btn.toggleClass("expanded");
+
+            // Buton sembolünü aç/kapa durumuna göre değiştir
+            if (btn.hasClass("expanded")) {
+                btn.text("-"); // açıkken - göster
+            } else {
+                btn.text("+"); // kapalıyken + göster
+            }
+
+            btn.parent().toggleClass("expanded");
+            btn.parent().parent().children("ul").slideToggle();
         });
-    }
+    });
+}
+
 
     if ($(".mobile-nav__toggler").length) {
         $(".mobile-nav__toggler").on("click", function (e) {
