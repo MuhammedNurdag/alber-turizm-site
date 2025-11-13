@@ -264,32 +264,38 @@
                             <span>Alber Turizm</span></h2>
                         </div>
 
-                    <div class="banner-one__content-right wow fadeInRight" data-wow-delay="0ms"
-                        data-wow-duration="1500ms">
-                        <div class="banner-one__content-right-text">
-                            <p>Türkiye’nin Her Noktasına <br> Konforlu ve Güvenli Yolculuk.</p>
-                        </div>
-                        <!-- Play Buton -->
-                        <a href="#" id="open-video" class="video-play-btn">
-                        <span class="hover-effect"></span>
-                        <span class="hover-effect2"></span>
-                        </a>
+                    <div class="banner-one__content-right wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+    <div class="banner-one__content-right-text">
+        <p>Türkiye’nin Her Noktasına <br> Konforlu ve Güvenli Yolculuk.</p>
+    </div>
+    <!-- Play Buton -->
+    <a href="#" id="playBtn" class="video-play-btn">
+        <span class="hover-effect"></span>
+        <span class="hover-effect2"></span>
+    </a>
+                </div>
 
-                        <!-- Modal -->
-                        <div id="video-modal" class="video-modal">
-                        <div class="video-modal-content">
-                            <span id="close-video" class="close-video">&times;</span>
-                            <iframe
-                            id="youtube-video"
-                            src=""
-                            frameborder="0"
-                            allow="autoplay; encrypted-media"
-                            allowfullscreen
-                            ></iframe>
-                        </div>
-                        </div>
-
-                        </div>
+<!-- Modal -->
+<div id="modal" style="
+  display:none; 
+  position:fixed; 
+  inset:0; 
+  background:rgba(0,0,0,0.8); 
+  justify-content:center; 
+  align-items:center; 
+  z-index:9999;">
+  <div style="position:relative; max-width:800px; width:90%; background:#000;">
+    <span id="closeBtn" style="
+      position:absolute; 
+      top:10px; right:15px; 
+      color:#fff; 
+      font-size:28px; 
+      cursor:pointer;">&times;</span>
+    <div id="video-container" style="width:100%; height:0; padding-bottom:56.25%; position:relative;">
+      <!-- Video JS ile buraya yüklenecek -->
+    </div>
+  </div>
+</div>
                     </div>
                 </div>
             </div>
@@ -531,7 +537,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="service-box text-center shadow-sm p-3 h-100 rounded">
             <div class="service-img mb-3">
-                <img lazy="loading"  src="assets/images/resources/Filo-kiralama3.webp" alt="VIP Transfer" class="img-fluid rounded">
+                <img lazy="loading"  src="assets/images/resources/viptransfer.webp" alt="VIP Transfer" class="img-fluid rounded">
             </div>
             <div class="service-content">
                 <h3 class="h4 fw-bold mb-2">VIP Transfer Hizmeti</h3>
@@ -547,7 +553,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="service-box text-center shadow-sm p-3 h-100 rounded">
             <div class="service-img mb-3">
-                <img lazy="loading"  src="assets/images/resources/portier-welcoming-into-the-car-2025-02-02-16-23-18-utc.webp" alt="Havalimanı Servisi" class="img-fluid rounded">
+                <img lazy="loading"  src="assets/images/resources/havalimanı.webp" alt="Havalimanı Servisi" class="img-fluid rounded">
             </div>
             <div class="service-content">
                 <h3 class="h4 fw-bold mb-2">Havalimanı Servisi</h3>
@@ -929,50 +935,10 @@
         </div>
     </div>
 </section>
-<!--End Counter One-->
 
-
-
-        <!--Start Brand One-->
-        <section class="brand-one">
-            <div class="container">
-                <div class="brand-one__carousel owl-carousel owl-theme">
-                    <!--Start Brand One Single-->
-                    <div class="brand-one__single">
-                        <div class="brand-one__single-inner">
-                            <a href="#"><img lazy="loading"  src="assets/images/resources/Yeni Proje (5).webp" alt="Marka 1"></a>
-                        </div>
-                    </div>
-                    <!--End Brand One Single-->
-
-                
-
-                    <div class="brand-one__single">
-                        <div class="brand-one__single-inner">
-                            <a href="#"><img lazy="loading"  src="assets/images/resources/Yeni Proje (6).webp" alt="Marka 3"></a>
-                        </div>
-                    </div>
-
-                    <div class="brand-one__single">
-                        <div class="brand-one__single-inner">
-                            <a href="#"><img lazy="loading"  src="assets/images/resources/atasay.webp" alt="Marka 4"></a>
-                        </div>
-                    </div>
-
-                    <div class="brand-one__single">
-                        <div class="brand-one__single-inner">
-                            <a href="#"><img lazy="loading"  src="assets/images/resources/Yeni Proje (3).webp" alt="Marka 5"></a>
-                        </div>
-                    </div>
-
-                    <div class="brand-one__single">
-                        <div class="brand-one__single-inner">
-                            <a href="#"><img lazy="loading"  src="assets/images/resources/edenered.webp" alt="Marka 6"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href="https://wa.me/905426194939" class="float-btn-whatsapp" target="_blank" aria-label="WhatsApp">
+        
+        <!--Start Footer One-->
+        <a href="https://wa.me/905426194939" class="float-btn-whatsapp" target="_blank" aria-label="WhatsApp">
                 <i class="fab fa-whatsapp"></i>
             </a>
 
@@ -980,10 +946,6 @@
             <a href="https://www.instagram.com/AlberTurizm" class="float-btn-instagram" target="_blank" aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
-        </section>
-        <!--End Brand One-->
-        
-        <!--Start Footer One-->
         <footer class="footer-one">
             <div class="footer-one__pattern">
                 <img lazy="loading"  src="assets/images/pattern/footer-v1-pattern.png" alt="#">
@@ -1159,7 +1121,38 @@
 
 <script src="assets/js/vendor.min.js"defer></script>
 <script src="assets/js/theme.min.js" defer></script>
+<script defer>
+const playBtn = document.getElementById("playBtn");
+const modal = document.getElementById("modal");
+const closeBtn = document.getElementById("closeBtn");
+const videoContainer = document.getElementById("video-container");
 
+// Video yolu
+const videoSrc = "assets/video/albervideo.mp4";
+
+// Videoyu yükle
+playBtn.addEventListener("click", function() {
+  modal.style.display = "flex";
+  videoContainer.innerHTML = `
+    <video autoplay controls style="position:absolute; top:0; left:0; width:100%; height:100%;">
+      <source src="${videoSrc}" type="video/mp4">
+      Tarayıcınız video etiketini desteklemiyor.
+    </video>
+  `;
+});
+
+// Videoyu kaldır ve modal kapat
+function closeModal() {
+  modal.style.display = "none";
+  videoContainer.innerHTML = ""; // video kaldırılıyor
+}
+
+closeBtn.addEventListener("click", closeModal);
+modal.addEventListener("click", function(e) {
+  if(e.target === modal) closeModal();
+});
+
+</script>
 </body>
 
 </html>
